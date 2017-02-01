@@ -21,7 +21,7 @@ class base::ssh {
 
         #Add austen macbook pub key to authorized_keys
         
-        file { 'austen_macbook_pub_key':
+        file { 'macbook':
                 ensure  => file,
                 owner   => 'root',
                 group   => 'root',
