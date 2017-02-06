@@ -10,9 +10,11 @@
 
 ************  DO NOT  MAKE OS CHANGES MANUALLY *****************
 ---------NODE INFORMATION-------------
-Hostname:   <%=@fqdn%>
-IP Address: <%=@ip%>
-Zone:       <%=@zone%>
-Virtual:    <%=@virtual%>
-Uptime:     <%=@uptime%>
+Hostname:   <%= @fqdn %>
+OS:         <%= @os['name'] %> <%= @os['release']['full'] %>
+Memory:     Total=<%= @memory['system']['total'] %> Used=<%= @memory['system']['used'] %> Capacity=<%= @memory['system']['capacity'] %> 
+IP Address: <%= @networking['ip'] %>
+Zone:       <%= @zone %>
+Virtual:    <%= @virtual %>
+Uptime:     <%= @uptime %>
 --------------------------------------
