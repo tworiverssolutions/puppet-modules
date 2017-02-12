@@ -7,4 +7,6 @@ class smack_profiles::base {
         include localusers::groups::customers
         include localusers::groups::wheel
         include ntp
+        include base::motd
+        include base::hosts
 }

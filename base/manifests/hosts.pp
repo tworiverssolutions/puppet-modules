@@ -30,8 +30,8 @@ class base::hosts {
 		line => '192.168.12.52	smackubuntu01.localdomain',
 	}
 
-	file_line { 'GitLab_Host':
+	file_line { 'Manage_IQ':
 		path => '/etc/hosts',
-		line => '192.168.12.6	smackgitlab01.localdomain',
+		line => '192.168.12.6	smackmanageiq01.localdomain',
 	}
 }
